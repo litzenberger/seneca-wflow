@@ -6,4 +6,4 @@ A seneca workflow plugin to help orgainze the business process you care about.
 
 # Sequence Pattern
 
-Basic building block to workflows.  
+Basic building block for workflows.  

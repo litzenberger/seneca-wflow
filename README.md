@@ -1,5 +1,9 @@
 # seneca-wflow
-helper to organize the business process 
+Business Process Model
 
 ###
-A seneca workflow plugin to help orgainze the business process.
+A seneca workflow plugin to help orgainze the business process you care about.
+
+# Sequence Pattern
+
+Basic building block to workflows.  

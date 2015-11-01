@@ -2,7 +2,7 @@
 Business Process Model
 
 ###
-A seneca workflow plugin to help design the set of microservices to meet the business need.
+A seneca workflow plugin to help design the set of microservices to meet a business need.
 
 
 

@@ -20,7 +20,7 @@ var _seneca = require('seneca')()
 	
   	filename:'./workflow/yourflow',// module that contains the business flow
   	
-  	sequence:['process1', 'process2']
+  	sequence:['process1', 'process2',...]
   	
   	});
 

@@ -1,6 +1,6 @@
 "use strict"
 /**
- * @fileoverview defines the worklfow for bot
+ * @fileoverview defines the worklfow 
  * @author @litzenberger ron.litzenberger@gmail.com (ron litzenberger) 
  *
  */

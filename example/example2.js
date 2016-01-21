@@ -43,7 +43,7 @@ _seneca.ready( function(err){
 	start(function(err,r){
 		_seneca.log.debug("change workflow");
 		var cmd = {role : 'flowEngine', cmd : 'create'};
-		// here were are going to change the flow then run it again. 
+		// here were are going to change the flow then run it again.
 		var sequence=["hello","world","world"];
 
 		_seneca.act(cmd,{sequence:sequence},function(){

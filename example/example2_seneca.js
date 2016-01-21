@@ -18,7 +18,7 @@ module.exports = {
 		var answer="world";
 		if(param[0]===answer)
 			param="domination"
-		// change which service is called based on flow
+		// patterne matching is awesome.  Change the outcome based on flow
 		var cmd = {role : 'example2', cmd : param};
 		
 		seneca.act(cmd,function(err,answer){

@@ -16,7 +16,11 @@ Simple way to organize the flow of business processes.
 
 var _seneca = require('seneca')()
 
-	.use('seneca-wflow',config);
+	.use('seneca-wflow', {
+	
+  	filename:'./workflow/yourflow',// module that contains the business flow
+  	
+  	sequence:['process1"process2"]});
 
 # Examples:
 

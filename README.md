@@ -15,6 +15,7 @@ Simple way to organize the flow of business processes.
 # To Use
 
 var _seneca = require('seneca')()
+
 	.use('seneca-wflow',config);
 
 # Examples:

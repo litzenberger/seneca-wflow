@@ -1,6 +1,6 @@
 # Seneca With Flow (seneca-wflow)
 ###
-A seneca workflow plugin to help design the business flow.
+A simple waterflow wrapper for seneca microservices
 
 
 
@@ -8,9 +8,9 @@ A seneca workflow plugin to help design the business flow.
 
 Basic building block for workflows.  
 
-# Basic Idea
+# Idea
 
-Simple way to organize the flow of business processes.
+Chain microservices based on business workflow.  
 
 # To Use
 

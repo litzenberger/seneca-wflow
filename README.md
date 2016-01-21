@@ -17,4 +17,5 @@ Setup a way to orchastrate the services.
 
 
 example 1 $ node example1 --seneca.log.all | grep flowEngine
+
 example 2 $ node example2 --seneca.log.all | grep example2

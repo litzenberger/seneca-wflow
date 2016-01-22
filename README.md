@@ -30,4 +30,6 @@ var _seneca = require('seneca')()
 
 example 1 $ node example1 --seneca.log.all | grep flowEngine
 
+example 2 $ node example2 
+
 example 2 $ node example2 --seneca.log.all | grep example2

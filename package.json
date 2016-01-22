@@ -1,6 +1,6 @@
 {
   "name": "seneca-wflow",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple business flow for seneca",
   "main": "wflow-plugin.js",
   "scripts": {

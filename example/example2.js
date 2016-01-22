@@ -26,7 +26,7 @@ _seneca.use('example2_plugin',options);
 // start
 _seneca.ready( function(err){
 	if (err) { return; }
-
+	console.log("Inital flow : "+options.sequence)
 	// starts the workflow
 	function start(cb) {
 		var cmd = {role : 'flowEngine', cmd : 'start'};
@@ -41,11 +41,11 @@ _seneca.ready( function(err){
 
 	// start with initial workflow.
 	start(function(err,r){
-		_seneca.log.debug("change workflow");
+		console.log("change workflow");
 		var cmd = {role : 'flowEngine', cmd : 'create'};
 		// here were are going to change the flow then run it again.
 		var sequence=["hello","world","world"];
-
+		console.log("new flow : "+sequence)
 		_seneca.act(cmd,{sequence:sequence},function(){
 			start(function(err,r){
 				_seneca.log.debug("done --"+r);

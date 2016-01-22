@@ -23,12 +23,14 @@ var exports = module.exports = function(options) {
 	function hello(args,cb){
 		var answer="world";
 		seneca.log.debug("hello "+answer);
+		console.log("hello "+answer);
 		return cb(null,[answer]);
 
 	}
 	function domination(args,cb){
 		var answer="world";
 		seneca.log.debug(answer +"  domination");
+		console.log(answer +"  domination");
 		return cb(null,[answer]);
 
 	}

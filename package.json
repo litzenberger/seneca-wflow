@@ -1,7 +1,7 @@
 {
   "name": "seneca-wflow",
-  "version": "0.0.10",
-  "description": "Simple business flow for seneca",
+  "version": "0.0.11",
+  "description": "A simple waterflow wrapper for seneca microservices",
   "main": "wflow-plugin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,12 +1,12 @@
 "use strict"
+
 /**
  * @fileoverview defines the worklfow 
  * @author @litzenberger ron.litzenberger@gmail.com (ron litzenberger) 
- * Example 1: example to show how to set inital flow and then modify flow. 
+ *
  */
 
 module.exports = {
-
 
 	hello: function (seneca,next){
 		seneca.log.debug("hello called")
@@ -15,13 +15,16 @@ module.exports = {
 	},
 
 	world: function (seneca,param,next){
-		seneca.log.debug("world called")
-		var answer="world"
+		var answer="world";
 		if(param[0]===answer)
-			answer="domination"
-		console.log(param +" "+answer);
-		next(null,[answer]);
+			param="domination"
+		// pattern matching is awesome.  Change the outcome based on flow
+		var cmd = {role : 'example3', cmd : param};
 		
+		seneca.act(cmd,function(err,answer){
+			if (err) { return cb(err); }
+				next(null,answer);
+			}
+		);	
 	}
-
 }

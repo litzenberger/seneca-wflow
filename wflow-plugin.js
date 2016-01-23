@@ -23,9 +23,11 @@ var exports = module.exports = function(options) {
 	seneca.add({role : plugin,cmd : 'add'}, add);
 	seneca.add({role : plugin,cmd : 'create'}, create_sequence);
 	seneca.add({role : plugin,cmd : 'start'}, start_sequence);
+	seneca.add({role : plugin,cmd : 'append'}, push_sequence);
 
 	// initialize
 	function init (args,cb) {
+
 		workflow= new flowEngine(seneca);
 		seneca.log.debug("init called");
 		if(options.filename!== undefined){
@@ -50,7 +52,6 @@ var exports = module.exports = function(options) {
 
 	
 	}
-	// get list of saved searches linked to collections
 
 	// load the module
 	function add (args,cb) {
@@ -73,13 +74,18 @@ var exports = module.exports = function(options) {
 	}
 	// starts sequence
 	function start_sequence (args,cb) {
-
 		// run activity list
 		workflow.start_sequence(args,cb);
-				
-
 
 	}
+
+		// appends a new sequence to current sequence. 
+	function push_sequence (args,cb) {
+		// run activity list
+		workflow.push_sequence(args.loop,args.sequence,cb);
+
+	}
+
 
 	return {
 		name:plugin

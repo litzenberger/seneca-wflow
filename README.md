@@ -27,9 +27,26 @@ var _seneca = require('seneca')()
 # Examples:
 
 
+### Example 1 : run with flow without seneca
+	
+	```sh
+	$ node example/example1 --seneca.log.all | grep flowEngine
 
-$ node example/example1 --seneca.log.all | grep flowEngine
+### Example 2: Example of creating a new workflow using the creat command.
 
-$ node example/example2 
+	```sh
+	$ node example/example2 
 
-$ node example/example2 --seneca.log.all | grep example2
+### Add loging to your plugin
+
+	```sh
+	$ node example/example2 --seneca.log.all | grep example2
+
+
+### Example 3:  Using the append command will append a sequence with number of times to execute the sequence.  Used to make loops.
+
+	```sh
+	$ node example/example3
+
+
+

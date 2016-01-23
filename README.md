@@ -54,5 +54,14 @@ var _seneca = require('seneca')()
 
 	$ node example/example3
 
+### Example 4:  
+	Use pre-workflow flag to modify workflow prior to execute.
 
+	var options={
+
+	filename:"example4_seneca", // module 
+	sequence:["hello","preWF:generateLoop"]
+	}
+
+	$ node example/example4
 

@@ -4,7 +4,7 @@ A simple waterflow wrapper for seneca microservices
 
 
 
-# Sequence Pattern
+# Sequence
 
 Basic building block for workflows.  
 
@@ -36,7 +36,7 @@ var _seneca = require('seneca')()
 
 ### Example 2: 
 
-	Example of creating a new workflow using the creat command.
+	Example of creating a new workflow using the create command.
 
 
 	$ node example/example2 

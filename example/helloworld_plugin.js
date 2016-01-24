@@ -15,10 +15,10 @@ var exports = module.exports = function(options) {
 	var options = options;
 
 	var noop = function () {};
-	var plugin = "example4";
-	//add the seneca business logic for example2
-	seneca.add({role : "example4",cmd : 'hello'}, hello);
-	seneca.add({role : "example4",cmd : 'domination'}, domination);
+	var plugin = "helloworld";
+	//add the seneca business logic for helloworld
+	seneca.add({role : "helloworld",cmd : 'hello'}, hello);
+	seneca.add({role : "helloworld",cmd : 'domination'}, domination);
 
 	function hello(args,cb){
 		var answer="world";

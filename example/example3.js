@@ -15,11 +15,11 @@ var _seneca = require('seneca')().error(
 var sequence=["hello"];
 var options={
 
-	filename:"example3_seneca", // module 
+	filename:"example3_module", // module 
 	sequence:["hello"] // flow
 }
 _seneca.use('../wflow-plugin',options);
-_seneca.use('example3_plugin',options);
+_seneca.use('helloworld_plugin',options);
 
 
 

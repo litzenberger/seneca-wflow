@@ -19,7 +19,7 @@ module.exports = {
 		if(param[0]===answer)
 			param="domination"
 		// pattern matching is awesome.  Change the outcome based on flow
-		var cmd = {role : 'example3', cmd : param};
+		var cmd = {role : 'helloworld', cmd : param};
 		
 		seneca.act(cmd,function(err,answer){
 			if (err) { return cb(err); }

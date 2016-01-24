@@ -14,7 +14,7 @@ var _seneca = require('seneca')().error(
 // load flow plugin with options.
 var sequence=["hello","world"];
 var options={
-	filename:"example1_bp", // module 
+	filename:"example1_module", // module 
 	sequence:["hello","world"] // flow
 
 }

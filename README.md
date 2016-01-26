@@ -30,7 +30,6 @@ var _seneca = require('seneca')()
 ### Example 1 : 
 
 	run with flow without seneca
-	
 
 	$ node example/example1 --seneca.log.all | grep flowEngine
 

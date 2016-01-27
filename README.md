@@ -1,13 +1,7 @@
 # Seneca With Flow (seneca-wflow)
 ###
 A simple waterflow wrapper for seneca microservices
-
-
-
-# Sequence
-
-Basic building block for workflows.  
-
+ 
 # Idea
 
 Chain microservices based on business workflow.  

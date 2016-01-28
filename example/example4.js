@@ -27,25 +27,16 @@ _seneca.use('helloworld_plugin',options);
 _seneca.ready( function(err){
 	if (err) { return; }
 	console.log("Inital flow : "+options.sequence)
-	// starts the workflow
-	function start(cb) {
+	
+		// starts the workflow
 		var cmd = {role : 'flowEngine', cmd : 'start'};
-
 		_seneca.act(cmd,function(err,r){
 			if (err) { return cb(err); }
-				return cb(null,r);
+				_seneca.log.debug("done --"+r);
+				process.exit();
 
 			}
 		);
 	};
-
-	// start with initial workflow.
-	start(function(err,r){
-				_seneca.log.debug("done --"+r);
-				process.exit();
-
-	})
-
-
 
 });

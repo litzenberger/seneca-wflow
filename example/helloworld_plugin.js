@@ -4,11 +4,8 @@
  * @author @litzenberger ron.litzenberger@gmail.com (ron litzenberger) 
  *
  */
-
 var _ = require('underscore');
 var async = require('async');
-
-
 var exports = module.exports = function(options) {
 
 	var seneca = this;
@@ -32,11 +29,8 @@ var exports = module.exports = function(options) {
 		seneca.log.debug(answer +"  domination");
 		console.log(answer +"  domination");
 		return cb(null,[answer]);
-
 	}
-
 	return {
 		name:plugin
 	}
-
 }

@@ -29,14 +29,13 @@ _seneca.ready( function(err){
 	console.log("Inital flow : "+options.sequence)
 	
 		// starts the workflow
-		var cmd = {role : 'flowEngine', cmd : 'start'};
-		_seneca.act(cmd,function(err,r){
+		var flow=_seneca.pin({role:"flowEngine","cmd":"*"})
+			flow.start(function(err,r){
 			if (err) { return cb(err); }
 				_seneca.log.debug("done --"+r);
 				process.exit();
 
 			}
 		);
-	};
 
 });

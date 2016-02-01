@@ -7,13 +7,11 @@
  */
 
 module.exports = {
-
+	
 	hello: function (seneca,next){
 		seneca.log.debug("hello called")
 		next(null,["hello"]);
-
 	},
-
 	world: function (seneca,param,next){
 		var answer="world";
 		if(param[0]===answer)
